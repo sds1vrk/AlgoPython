@@ -32,7 +32,7 @@
 
 |   **<c8>해시 </c8>**   |                           문제 명                            |                           Study                            |
 | :--------------------: | :----------------------------------------------------------: | :--------------------------------------------------------: |
-|           1            | [완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576) | [🔴](해시/동성-완주하지%20못한%20선수.java)<br>getOrDefualt |
+|           1            | [완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576) | 🟢](PythonAlgo/programers/1. hash/level1_sunsu.py) |
 |           2            | [전화번호 목록](https://programmers.co.kr/learn/courses/30/lessons/42577) |                                                            |
 |           3            | [위장](https://programmers.co.kr/learn/courses/30/lessons/42578) |                                                            |
 |           4            | [베스트 앨범](https://programmers.co.kr/learn/courses/30/lessons/42579) |                                                            |

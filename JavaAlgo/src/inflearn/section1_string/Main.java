@@ -1,7 +1,6 @@
 package inflearn.section1_string;
-// 기본 구조
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
 

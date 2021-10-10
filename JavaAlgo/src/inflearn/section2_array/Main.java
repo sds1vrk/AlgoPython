@@ -15,6 +15,7 @@ public class Main {
         Main main=new Main();
         Scanner scan=new Scanner(System.in);
 
-        System.out.println(main.solution());
+
+
     }
 }

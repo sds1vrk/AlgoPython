@@ -19,7 +19,7 @@ public class Main11 {
             int k=arr[i][0];
             for (int j=0;j<n;j++) {
                 if (k==arr[j][0]) {
-                    // 자기 자신 제외
+                    // 자기 자신 제외 같은반 학생 추가
                     if (i!=j) {
                         hashSet.add(j);
                     }
@@ -30,7 +30,7 @@ public class Main11 {
             int k2=arr[i][1];
             for (int j=0;j<n;j++) {
                 if (k2==arr[j][1]) {
-                    // 자기 자신 제외
+                    // 자기 자신 제외 같은반 학생 추가
                     if (i!=j) {
                         hashSet.add(j);
                     }
@@ -74,10 +74,11 @@ public class Main11 {
             }
 
             int ans=hashSet.size();
+//            System.out.println("i:"+i+" ans:"+ans);
             if (minSize<ans) {
-                answer=i;
+                minSize=ans;
+                answer=i+1;
             }
-
 
         }
 
@@ -93,21 +94,15 @@ public class Main11 {
         Scanner scan=new Scanner(System.in);
 
         int n=scan.nextInt();
-        int arr[][]=new int[n][n];
+        int arr[][]=new int[n][5];
         for (int i=0;i<n;i++) {
-            for (int j=0;j<n;j++) {
+            for (int j=0;j<5;j++) {
                 arr[i][j]=scan.nextInt();
             }
         }
 
 
-        // 출력
-        for (int i=0;i<n;i++) {
-            for (int j=0;j<n;j++) {
-//                System.out.print(arr[i][j]+" ");
-            }
-//            System.out.println();
-        }
+
 
         System.out.println(main.solution(n,arr));
 

@@ -33,12 +33,16 @@ public class Main1 {
         // List안에 Map을 넣는다.
         // Map.Entry는 -> 본래 맵에 key, value값  전체를 가진다. 이 부분을 hashMap.entrySet()을 이용해서 전체를 넣는다.
         List<Map.Entry<String,Integer>> entryList=new ArrayList<Map.Entry<String,Integer>>(hashMap.entrySet());
-        Collections.sort(entryList, new Comparator<Map.Entry<String, Integer>>() {
-            @Override
-            public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2) {
-                return o2.getValue().compareTo(o1.getValue());
-            }
-        });
+//        Collections.sort(entryList, new Comparator<Map.Entry<String, Integer>>() {
+//            @Override
+//            public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2) {
+//                return o2.getValue().compareTo(o1.getValue());
+//            }
+//        });
+
+        // lambda를 이용한 정렬
+        Collections.sort(entryList,(o1,o2)->(o2.getValue().compareTo(o1.getValue())));
+
 
         // 첫번째 인덱스를 꺼낸다?
         Map.Entry<String, Integer> stringIntegerEntry = entryList.get(0);
